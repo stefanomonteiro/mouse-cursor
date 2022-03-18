@@ -1,0 +1,26 @@
+.sm-cursor{
+    --cursor-size: 70px;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, -50%);
+    width: var(--cursor-size);
+    height: var(--cursor-size);
+    border-radius: 50%;
+    z-index: 9999999;
+    transition: opacity .3s;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    background-color: var(--e-global-color-text);
+    color:  var(--e-global-color-primary);
+    font-family:  var(--e-global-typography-secondary-font-family);
+    font-weight:  var(--e-global-typography-secondary-font-weight);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.isTouchDevice .sm-cursor{
+    display: none;
+}
+
